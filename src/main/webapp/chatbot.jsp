@@ -45,12 +45,12 @@ p {
 }
 
 .query {
-	background-color: #e0f7fa;
+	background-color: #dbceb8;
 	text-align: right;
 }
 
 .response {
-	background-color: #e8f5e9;
+	background-color: #b1cacc;
 	text-align: left;
 }
 
