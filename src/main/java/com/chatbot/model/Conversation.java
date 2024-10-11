@@ -1,14 +1,19 @@
 package com.chatbot.model;
 
-import jakarta.persistence.*;
-import java.sql.*;
+import java.sql.Timestamp;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "conversations")
 public class Conversation {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Integer id;
 
 	private String userQuery;
 	private String chatbotResponse;
@@ -16,7 +21,7 @@ public class Conversation {
 
 	public Conversation() {
 	}
-	
+
 	public Conversation(String userQuery, String chatbotResponse, Timestamp timestamp) {
 		this.userQuery = userQuery;
 		this.chatbotResponse = chatbotResponse;

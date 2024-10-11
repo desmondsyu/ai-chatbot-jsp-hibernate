@@ -30,6 +30,6 @@
 		<property name="hibernate.hbm2ddl.auto">create</property>
 
 		<!-- Mention the entity classes -->
-		<mapping class="com.grocery.model.Product" />
+		<mapping class="com.chatbot.model.Conversation" />
 	</session-factory>
 </hibernate-configuration>

@@ -1,5 +1,11 @@
 package com.chatbot.repository;
 
-public interface ConversationRepository {
+import java.util.List;
 
+import com.chatbot.model.Conversation;
+
+public interface ConversationRepository {
+	List<Conversation> getAllConversations();
+
+	void saveConversation(Conversation conversation);
 }
